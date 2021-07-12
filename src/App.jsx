@@ -1,7 +1,15 @@
+// Stylesheet
 import "./App.css";
 
+// Components
+import LandingSection from "./components/LandingSection/LandingSection";
+
 const App = () => {
-  return <div>Hello World</div>;
+  return (
+    <main>
+      <LandingSection />
+    </main>
+  );
 };
 
 export default App;
