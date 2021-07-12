@@ -6,24 +6,32 @@ import Illustration from "../../assets/vectors/landing.svg";
 
 const LandingSection = () => {
   return (
-    <section>
+    <section id="landing">
       <header className="navbar">
         <nav>
           <ul className="nav-links">
             <li className="nav-link">
-              <a href="#landing">Home</a>
+              <a data-scroll href="#landing">
+                Home
+              </a>
             </li>
-            <li className="nav-link">
+            <li data-scroll className="nav-link">
               <a href="#about">About</a>
             </li>
             <li className="nav-link">
-              <a href="#skills">Skills</a>
+              <a data-scroll href="#skills">
+                Skills
+              </a>
             </li>
             <li className="nav-link">
-              <a href="#projects">Projects</a>
+              <a data-scroll href="#projects">
+                Projects
+              </a>
             </li>
             <li className="nav-link contact">
-              <a href="mailto:johndoe@gmail.com">Contact Me</a>
+              <a data-scroll href="mailto:johndoe@gmail.com">
+                Contact Me
+              </a>
             </li>
           </ul>
         </nav>
@@ -37,7 +45,17 @@ const LandingSection = () => {
             I am a <span className="green">MERN Stack Developer</span>
           </h3>
         </article>
-        <img src={Illustration} alt="Illustration" height="300" />
+        <img src={Illustration} alt="Illustration" height="" />
+        <div class="mouse_scroll">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="m_scroll_arrows unu"></span>
+            <span class="m_scroll_arrows doi"></span>
+            <span class="m_scroll_arrows trei"></span>
+          </div>
+        </div>
       </main>
     </section>
   );
