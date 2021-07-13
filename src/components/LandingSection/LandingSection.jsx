@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+
 // Stylesheets
 import "./LandingSection.css";
 
@@ -5,6 +8,44 @@ import "./LandingSection.css";
 import Illustration from "../../assets/vectors/landing.svg";
 
 const LandingSection = () => {
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.to(".main-heading", {
+      opacity: 1,
+      duration: 1.5,
+    })
+      .from(".main-heading", {
+        x: -100,
+        duration: 1.5,
+        delay: -1.5,
+      })
+      .to(".sub-heading", {
+        opacity: 1,
+        delay: -1,
+        duration: 1.5,
+      })
+      .from(".sub-heading", {
+        x: -100,
+        delay: -1.5,
+        duration: 1.5,
+      })
+      .to(".landing-il", {
+        opacity: 1,
+        delay: -1,
+        duration: 1.5,
+      })
+      .from(".landing-il", {
+        y: 100,
+        delay: -1.5,
+        duration: 1.5,
+      })
+      .to(".navbar", {
+        opacity: 1,
+        duration: 1.5,
+      });
+  }, []);
+
   return (
     <section id="landing">
       <header className="navbar">
@@ -43,8 +84,8 @@ const LandingSection = () => {
             I am a <span className="green">MERN Stack Developer</span>
           </h3>
         </article>
-        <img src={Illustration} alt="Illustration" />
-        <a data-scroll href="#about">
+        <img src={Illustration} alt="Illustration" className="landing-il" />
+        <a data-scroll href="#about" className="chevron">
           <div className="mouse_scroll">
             <div className="mouse">
               <div className="wheel"></div>
