@@ -1,6 +1,7 @@
 .about {
   min-height: 50vh;
-  padding: 0 8rem;
+  padding: 6rem 8rem;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1045px) {
