@@ -5,6 +5,7 @@ import "./App.css";
 import LandingSection from "./components/LandingSection/LandingSection";
 import AboutSection from "./components/AboutSection/AboutSection";
 import SkillsSection from "./components/SkillsSection/SkillsSection";
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <LandingSection />
       <AboutSection />
       <SkillsSection />
+      <ProjectsSection />
     </main>
   );
 };

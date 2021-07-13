@@ -13,3 +13,30 @@ export const SKILLS = [
   { name: "Cloud", skill: 62 },
   { name: "SEO", skill: 100 },
 ];
+
+export const PROJECTS = [
+  {
+    title: "Lorem, ipsum.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo necessitatibus atque ratione repellendus ex earum saepe consectetur aut, vero illo at error quia asperiores sed. Sunt sint enim commodi.",
+    img: "//placehold.it/1000x1000",
+    link: "https://github.com",
+  },
+  {
+    title: "Lorem, ipsum.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo necessitatibus atque ratione repellendus ex earum saepe consectetur aut, vero illo at error quia asperiores sed. Sunt sint enim commodi.",
+    img: "//placehold.it/1000x1000",
+    link: "https://github.com",
+  },
+  {
+    title: "Lorem, ipsum.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo necessitatibus atque ratione repellendus ex earum saepe consectetur aut, vero illo at error quia asperiores sed. Sunt sint enim commodi.",
+    img: "//placehold.it/1000x1000",
+    link: "https://github.com",
+  },
+  {
+    title: "Lorem, ipsum.",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quo necessitatibus atque ratione repellendus ex earum saepe consectetur aut, vero illo at error quia asperiores sed. Sunt sint enim commodi.",
+    img: "//placehold.it/1000x1000",
+    link: "https://github.com",
+  },
+];

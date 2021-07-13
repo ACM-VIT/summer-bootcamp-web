@@ -1,0 +1,81 @@
+.projects {
+  min-height: 50vh;
+  padding: 6rem 8rem;
+  box-sizing: border-box;
+}
+
+.proj-cont {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-y: scroll;
+  padding: 2rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.proj-cont::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.proj-cont {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.proj {
+  padding: 1rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-right: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.proj:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.proj-img {
+  height: 15rem;
+  width: 28rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.orange {
+  color: #ff511a;
+}
+
+.proj-heading {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 1045px) {
+  .projects {
+    padding: 0;
+    padding-left: 2rem;
+    min-height: inherit;
+  }
+
+  .proj-img {
+    height: 8rem;
+    width: 12rem;
+  }
+
+  .proj-cont {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .proj {
+    margin-right: 1rem;
+  }
+}
