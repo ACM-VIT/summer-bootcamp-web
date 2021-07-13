@@ -1,0 +1,10 @@
+.about {
+  min-height: 50vh;
+  padding: 0 8rem;
+}
+
+@media only screen and (max-width: 1045px) {
+  .about {
+    padding: 2rem;
+  }
+}
