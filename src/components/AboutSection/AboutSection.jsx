@@ -11,26 +11,26 @@ const AboutSection = () => {
     tl.to("#about-heading", {
       scrollTrigger: "#about-heading",
       opacity: 1,
-      duration: 1.5,
+      duration: 2,
       delay: 2,
     })
       .from("#about-heading", {
         scrollTrigger: "#about-heading",
         x: -100,
-        duration: 1.5,
-        delay: -1.5,
+        duration: 2,
+        delay: -2,
       })
       .to("#about-content", {
         scrollTrigger: "#about-content",
         opacity: 1,
-        duration: 1.5,
+        duration: 2,
         delay: -1,
       })
       .from("#about-content", {
         scrollTrigger: "#about-content",
         x: -100,
-        duration: 1.5,
-        delay: -1.5,
+        duration: 2,
+        delay: -2,
       });
   }, []);
 
