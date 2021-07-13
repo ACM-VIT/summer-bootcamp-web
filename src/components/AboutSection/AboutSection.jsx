@@ -12,10 +12,9 @@ const AboutSection = () => {
       scrollTrigger: "#about-heading",
       opacity: 1,
       duration: 2,
-      delay: 2,
+      delay: 3.5,
     })
       .from("#about-heading", {
-        scrollTrigger: "#about-heading",
         x: -100,
         duration: 2,
         delay: -2,
@@ -27,7 +26,6 @@ const AboutSection = () => {
         delay: -1,
       })
       .from("#about-content", {
-        scrollTrigger: "#about-content",
         x: -100,
         duration: 2,
         delay: -2,
